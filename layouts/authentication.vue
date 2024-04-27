@@ -1,7 +1,8 @@
 <template>
   <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-      <img class="mx-auto h-6 w-auto" src="@/assets/img/logo.png" alt="Your Company">
+      <!-- <img class="mx-auto h-6 w-auto" src="@/assets/img/logo.png" alt="Your Company"> -->
+      <h1 class="text-center text-2xl font-semibold text-green-600">DocTrack NG</h1>
       <h2 class="mt-[84px] text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">{{ route.name ===
         'login'
         ? 'Sign in to portal' : 'Create Account' }}</h2>
