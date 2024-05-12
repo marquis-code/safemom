@@ -1,26 +1,12 @@
-<!-- <template>
-  <NuxtLayout name="hello">
-    <template #title>{{ productName }}</template>
-    <template #message>{{ message }}</template>
-  </NuxtLayout>
+<template>
+  <main>
+    <hero-section class="mb-10 lg:mb-20" />
+    <content-section />
+    <the-problem />
+    <the-solution />
+    <our-team />
+    <pricing-section />
+    <frequently-asked />
+    <footer-section />
+  </main>
 </template>
-
-<script setup lang="ts">
-const productName: string = "Nuxt 3 Starter Kit";
-const features: string[] = ["Vite", "Vue 3", "TypeScript", "PostCSS", "TailwindCSS"];
-const message = computed(
-  () => `This is a ${productName} with ${features.slice(0, -1).join(", ")} and ${features.slice(-1)}!`
-);
-
-definePageMeta({
-  layout: false,
-});
-</script> -->
-
-<!-- pages/index.vue -->
-<script setup lang="ts">
-onMounted(() => {
-  const router = useRouter()
-  router.push('/login');
-});
-</script>
