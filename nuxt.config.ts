@@ -3,7 +3,7 @@ export default {
   target: "static",
   app: {
     head: {
-      title: "DocTrack NG",
+      title: "Safemom",
       htmlAttrs: { lang: "en" },
       meta: [
         { charset: "utf-8" },
@@ -21,11 +21,5 @@ export default {
   axios: {
     // Axios options here
     timeout: 10000, // Example: set timeout to 10 seconds
-  },
-  // buildModules: [
-  //   '@nuxtjs/moment'
-  // ]
-  // alias: {
-  // 	'@': '/'
-  // },
+  }
 };
