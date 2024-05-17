@@ -7,6 +7,7 @@
     <our-team />
     <pricing-section />
     <frequently-asked />
+    <contact-us />
     <footer-section />
   </main>
 </template>

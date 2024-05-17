@@ -5,7 +5,8 @@
       <div class="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
         <div>
           <h2 class="text-lg font-semibold text-indigo-600" data-aos="flip-left">Case Study</h2>
-          <h3 class="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl" data-aos="flip-left">Meet Amara</h3>
+          <h3 class="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl" data-aos="flip-left">
+            Meet Amara</h3>
         </div>
       </div>
       <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
@@ -23,8 +24,9 @@
           <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
             <figure>
               <div class="aspect-h-7 aspect-w-12 lg:aspect-none">
-                <img class="rounded-lg object-cover object-center shadow-lg" data-aos="flip-left" src="@/assets/img/preg1.png"
-                  alt="Whitney leaning against a railing on a downtown street" width="1184" height="1376">
+                <img class="rounded-lg object-cover object-center shadow-lg" data-aos="flip-left"
+                  src="@/assets/img/preg1.png" alt="Whitney leaning against a railing on a downtown street" width="1184"
+                  height="1376">
               </div>
               <!-- <figcaption class="mt-3 flex text-sm text-gray-500">
                 <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -38,7 +40,7 @@
           </div>
         </div>
         <div class="mt-8 lg:mt-0">
-          <div class="mx-auto max-w-prose text-base lg:max-w-none space-y-3" data-aos="flip-left">
+          <div class="mx-auto max-w-prose text-base lg:max-w-none space-y-3 text-justify" data-aos="flip-left">
             <p data-aos="flip-left">In the serene town of Enugu, Nigeria, Amara, an expectant mother, stumbled
               upon the "SafeMom" app during a community health fair. With no access to the internet at home and relying
               solely on her small feature phone, Amara was initially skeptical about how an app could assist her through
@@ -47,7 +49,8 @@
               pregnancy milestones, and get answers to her numerous questions, all with a few simple button presses. It
               was like having a midwife in her pocket, guiding her through the unknowns of pregnancy with ease and
               confidence.</p>
-            <p data-aos="flip-left">Moreover, "SafeMom" bridged the language divide that had always been a barrier for Amara, offering her
+            <p data-aos="flip-left">Moreover, "SafeMom" bridged the language divide that had always been a barrier for
+              Amara, offering her
               the option to receive all communications in Igbo, her native language. This personal touch made the health
               information feel more relatable and easier to understand, ensuring that Amara never missed out on vital
               health tips due to language constraints. The community model feature further enriched her experience,

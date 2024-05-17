@@ -1,29 +1,14 @@
-<!-- <template>
-  <main>
-    <Typewriter />
-    <Nuxt />
-  </main>
-</template>
-
-<script>
-import Typewriter from '@/components/Typewriter.vue';
-
-export default {
-  components: {
-    Typewriter,
-  },
-};
-</script> -->
-
 <template>
   <div>
-    <!-- Full-screen overlay with typewriter effect -->
     <div v-if="showOverlay" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
       <p class="text-white text-2xl font-mono" v-html="displayedText"></p>
     </div>
-
-    <!-- Your normal layout content -->
     <NuxtPage />
+    <div class="fixed bottom-1 left-0 m-4 z-50">
+      <a href="https://wa.me/+2348128375404" target="_blank">
+        <img src="@/assets/icons/whatsapp.svg" class="h-14 w-14" />
+      </a>
+    </div>
   </div>
 </template>
 
