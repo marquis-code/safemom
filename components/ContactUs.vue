@@ -145,7 +145,7 @@ const formData = ref({
 
 const handleSubmit = async () => {
     processing.value = true
-    const url = 'https://buildr-backend.onrender.com/api/auth/signup';  // Your API endpoint
+    const url = 'https://safemom-contact-form.onrender.com/api/auth/signup';
     try {
         const response = await fetch(url, {
             method: 'POST',
