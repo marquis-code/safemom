@@ -133,7 +133,7 @@
               </div>
             </div>
           </div>
-          <select class="text-sm font-semibold leading-6 text-gray-900" @change="changeLanguage($event.target.value)" :value="currentLocale">
+          <select class="text-sm font-semibold leading-6 outline-none border-none text-gray-900" @change="changeLanguage($event.target.value)" :value="currentLocale">
             <option v-for="locale in locales" :key="locale.code" :value="locale.code">
               {{ locale.name }}
             </option>
