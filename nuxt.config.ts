@@ -30,6 +30,9 @@ export default {
     lazy: true,
     langDir: 'locales/'
   },
+  optimizeDeps: {
+    exclude: ['chunk-RAKT47ZN.js']
+  },
   css: ["/assets/css/main.css"],
   tailwindcss: {
     cssPath: "@/assets/css/main.css",

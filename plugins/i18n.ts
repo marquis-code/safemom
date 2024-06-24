@@ -733,7 +733,7 @@ export default defineNuxtPlugin((nuxtApp) => {
         bestRegards: "Cordialement",
         theSafeMomTeam: "L'équipe SafeMom.",
         footerHeading: "Pied de page",
-        healthyMoms: "Mamans en bonne santé, débuts heureux",
+        // healthyMoms: "Mamans en bonne santé, débuts heureux",
         solutions: "Solutions",
         support: "Soutien",
         company: "Entreprise",
