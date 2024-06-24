@@ -6,9 +6,7 @@
         <div
           class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
           <div class="lg:row-start-2 lg:max-w-md">
-            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl" data-aos="fade-in">The Problems</h2>
-            <!-- <p class="mt-6 text-lg leading-8 text-gray-300">Ac euismod vel sit maecenas id pellentesque eu sed
-              consectetur. Malesuada adipiscing sagittis vel nulla. Ac euismod vel sit maecenas.</p> -->
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl" data-aos="fade-in">{{ $t('theProblems') }}</h2>
           </div>
           <img src="@/assets/img/problem.jpg" alt="Product screenshot" data-aos="fade-in"
             class="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none"
@@ -23,12 +21,9 @@
                       d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z"
                       clip-rule="evenodd" />
                   </svg>
-                  Limited Access to Quality Healthcare Services.
+                  {{ $t('limitedAccess') }}
                 </dt>
-                <dd class="inline" data-aos="fade-in">Many communities in Nigeria and wider Africa face "Limited Access
-                  to Quality
-                  Healthcare Services," marked by insufficient healthcare facilities and a shortage of medical
-                  professionals, severely affecting public health and well-being..</dd>
+                <dd class="inline" data-aos="fade-in">"{{ $t('limitedAccessContd') }}</dd>
               </div>
               <div class="relative" data-aos="fade-in">
                 <dt class="ml-9 inline-block font-semibold text-white">
@@ -38,12 +33,9 @@
                       d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z"
                       clip-rule="evenodd" />
                   </svg>
-                  Cultural and Language Barrier.
+                  {{ $t('culturalBarrier') }}
                 </dt>
-                <dd class="inline" data-aos="fade-in">"Cultural and Language Barriers" in Nigeria and Africa hinder
-                  effective healthcare
-                  delivery, as diverse languages and traditions can lead to misunderstandings and mistrust between
-                  patients and healthcare providers..</dd>
+                <dd class="inline" data-aos="fade-in">"{{ $t('culturalBarrierContd') }}</dd>
               </div>
               <div class="relative" data-aos="fade-in">
                 <dt class="ml-9 inline-block font-semibold text-white">
@@ -55,12 +47,9 @@
                       d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
                       clip-rule="evenodd" />
                   </svg>
-                  Inadequate knowledge about pregnancy wellness.
+                  {{ $t('inadequateKnowledge') }}
                 </dt>
-                <dd class="inline" data-aos="fade-in">"Inadequate knowledge about pregnancy wellness" is prevalent,
-                  leading to increased
-                  risks and anxiety among expectant mothers due to a lack of accessible, reliable information on
-                  prenatal care..</dd>
+                <dd class="inline" data-aos="fade-in">"{{ $t('inadequateKnowledgeContd') }}</dd>
               </div>
               <div class="relative" data-aos="fade-in">
                 <dt class="ml-9 inline-block font-semibold text-white">
@@ -72,12 +61,9 @@
                       d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
                       clip-rule="evenodd" />
                   </svg>
-                  Financial Constraints.
+                  {{ $t('financialConstraints') }}
                 </dt>
-                <dd class="inline" data-aos="fade-in">"Financial Constraints" in Nigeria and Africa limit access to
-                  healthcare, with high
-                  costs and poverty barriers preventing many from receiving necessary medical care and support during
-                  critical times..</dd>
+                <dd class="inline" data-aos="fade-in">"{{ $t('financialConstraintsContd') }}</dd>
               </div>
             </dl>
           </div>
@@ -93,3 +79,8 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>

@@ -2,12 +2,8 @@
   <div class="bg-white py-24 sm:py-32">
     <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
       <div class="max-w-2xl">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl" data-aos="fade-in">Meet our
-          leadership</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-600" data-aos="fade-in">Our team is our proudest asset,
-          embodying
-          innovation, dedication, and a relentless pursuit of excellence. Together, we're not just setting standards;
-          we're redefining them. Get to know the brilliant minds propelling us forward.</p>
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl" data-aos="fade-in">{{ t('meetLeadership') }}</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600" data-aos="fade-in">{{ t('leadershipDescription') }}</p>
       </div>
       <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2" data-aos="fade-in">
         <li v-for="itm in members" :key="itm.name" data-aos="fade-in">
@@ -17,53 +13,56 @@
             <div>
               <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900" data-aos="fade-in">{{
           itm.name }}</h3>
-              <p class="text-sm font-semibold leading-6 text-indigo-600" data-aos="fade-in">{{ itm.position }}</p>
+              <p class="text-sm font-semibold leading-6 text-indigo-600" data-aos="fade-in">{{ t(itm.positionKey) }}</p>
             </div>
           </div>
         </li>
       </ul>
     </div>
   </div>
-
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+
 import ceo from '@/assets/img/ceo.jpeg'
 import cto from '@/assets/img/cto.jpeg'
 import qa from '@/assets/img/qa.jpeg'
 import cmo from '@/assets/img/cmo.jpeg'
 import coo from '@/assets/img/coo.jpeg'
 import ai from '@/assets/img/ai.jpeg'
+
 const members = ref([
   {
     image: ceo,
     name: 'Micheal Sunmoni',
-    position: 'Chief Executive Officer (CEO)'
+    positionKey: 'michealSunmoni'
   },
   {
     image: cto,
     name: 'Joshua Saanumi',
-    position: 'Chief Technology Officer (CTO)'
+    positionKey: 'joshuaSaanumi'
   },
   {
     image: qa,
     name: 'Bukola Awowole',
-    position: 'Chief Product Officer (CPO)'
+    positionKey: 'bukolaAwowole'
   },
   {
     image: cmo,
     name: 'Jesulewami Oreweme',
-    position: 'Chief Marketing Officer (CMO)'
+    positionKey: 'jesulewamiOreweme'
   },
   {
     image: coo,
     name: 'Abdulkhaliq Abdulrasaq',
-    position: 'Chief Operating Officer (COO)'
+    positionKey: 'abdulkhaliqAbdulrasaq'
   },
   {
     image: ai,
     name: 'Marquis Abah',
-    position: 'AI Engineer'
+    positionKey: 'marquisAbah'
   }
 ])
 </script>

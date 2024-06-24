@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div v-if="showOverlay" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
+    <!-- <div v-if="showOverlay" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
       <p class="text-white text-2xl font-mono" v-html="displayedText"></p>
-    </div>
+    </div> -->
     <NuxtPage />
     <div class="fixed bottom-1 left-0 m-4 z-50">
       <a href="https://wa.me/+2348128375404" target="_blank">
@@ -22,24 +22,24 @@ export default {
     };
   },
   methods: {
-    typeText() {
-      let i = 0;
-      const typingInterval = setInterval(() => {
-        if (i < this.text.length) {
-          this.displayedText += this.text.charAt(i);
-          i++;
-        } else {
-          clearInterval(typingInterval);
-          // Fade out overlay and show the page content
-          setTimeout(() => {
-            this.showOverlay = false;
-          }, 1000); // Adjust delay as needed
-        }
-      }, 150); // Adjust typing speed as needed
-    },
+    // typeText() {
+    //   let i = 0;
+    //   const typingInterval = setInterval(() => {
+    //     if (i < this.text.length) {
+    //       this.displayedText += this.text.charAt(i);
+    //       i++;
+    //     } else {
+    //       clearInterval(typingInterval);
+    //       // Fade out overlay and show the page content
+    //       setTimeout(() => {
+    //         this.showOverlay = false;
+    //       }, 1000); // Adjust delay as needed
+    //     }
+    //   }, 150); // Adjust typing speed as needed
+    // },
   },
   mounted() {
-    this.typeText();
+    // this.typeText();
   },
 };
 </script>

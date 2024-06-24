@@ -14,6 +14,22 @@ export default {
     },
   },
   modules: ["@nuxtjs/tailwindcss"],
+  buildModules: [
+    '@nuxtjs/i18n'
+  ],
+  i18n: {
+    locales: [
+      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'fr', name: 'French', file: 'fr.json' },
+      { code: 'es', name: 'Spanish', file: 'es.json' },
+      { code: 'yo', name: 'Yoruba', file: 'yo.json' },
+      { code: 'ig', name: 'Igbo', file: 'ig.json' },
+      { code: 'ha', name: 'Hausa', file: 'ha.json' }
+    ],
+    defaultLocale: 'en',
+    lazy: true,
+    langDir: 'locales/'
+  },
   css: ["/assets/css/main.css"],
   tailwindcss: {
     cssPath: "@/assets/css/main.css",
