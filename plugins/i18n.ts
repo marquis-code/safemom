@@ -1,7 +1,5 @@
 // plugins/i18n.ts
 import { createI18n } from "vue-i18n";
-import { defineNuxtPlugin } from "#app";
-
 export default defineNuxtPlugin((nuxtApp) => {
   const i18n = createI18n({
     legacy: false,

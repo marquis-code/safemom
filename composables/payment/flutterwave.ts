@@ -1,6 +1,6 @@
 import { useFlutterwave } from "flutterwave-vue3";
 // import { useLogin } from "@/composables/auth/login";
-import logo from "@/assets/img/logo.png";
+import logo from "@/assets/img/logo2.png";
 export const useFlutterwaveSDK = () => {
 //   const { localstorageData } = useLogin();
 //   const user = localstorageData.user.value;
@@ -19,10 +19,10 @@ const user = ref({
     return `${user.value.firstname} ${user.value.lastname}`;
   });
 
-  const handlePayment = () => {
+  const handlePayment = (product: any) => {
     loading.value = true;
     useFlutterwave({
-      amount: Number(paymentForm.value.amount),
+      amount: Number(product.price),
       callback(data: any): void {
         console.log(data.flw_ref, 'here')
         if(data.status === 'successful'){
@@ -37,7 +37,7 @@ const user = ref({
         phone_number: user.value.phone,
       },
       customizations: {
-        description: "Pay with Erranders",
+        description: "Pay with SafeMom",
         logo: logo,
         title: "Erranders",
       },

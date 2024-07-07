@@ -4,11 +4,10 @@
       <section class="container px-6 py-10 mx-auto space-y-8 pb-32">
         <div class="text-center">
           <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl" data-aos="flip-left">
-            Special Meals of the day!
+            Shop for your favorite maternal kits!
           </h1>
           <p class="max-w-lg mx-auto mt-4 text-[#011633] font-light" data-aos="flip-left">
-            Check our specials of the day and get discounts on all our meals and swift delivery to what ever location
-            within CMUL (College Of Medicine, Idi-araba).
+            Check our specials maternal kits and get them delivered to you at
           </p>
         </div>
         <div class="mx-auto max-w-7xl px-6">
@@ -52,9 +51,9 @@
               v-for="(image, index) in allImages" :key="index" @click="handleItemClick(image)">
               <img :src="image.imgUrl" class="h-full w-full object-cover rounded-xl object-center" alt="">
               <div class="w-64 -mt-2 overflow-hidden md:w-64 absolute bottom-4 pb-10 ">
-                <h3 class="py-2.5 font-medium pb-10 tracking-wide text-center text-base text-white">
+                <!-- <h3 class="py-2.5 font-medium pb-10 tracking-wide text-center text-base text-white">
                   {{ image.name }}
-                </h3>
+                </h3> -->
                 <div>
                   <div class="flex justify-between">
                     <div class="space-y-2.5">
@@ -63,7 +62,7 @@
                         <img src="@/assets/icons/rating-stars.svg" alt="rating" />
                         <!-- <p class="font-light text-sm"><span class="text-[#000000] font-semibold text-xs">2.5k</span>
                           Students</p> -->
-                        <p class="font-semibold text-sm">{{ image.vendor }}</p>
+                        <!-- <p class="font-semibold text-sm">{{ image.vendor }}</p> -->
                       </div>
                     </div>
                     <div class="w-full">
@@ -105,11 +104,13 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
-import meal1 from '@/assets/img/meal1.png'
-import meal2 from '@/assets/img/meal2.png'
-import meal3 from '@/assets/img/meal3.png'
+import meal1 from '@/assets/img/kit1.jpeg'
+import meal2 from '@/assets/img/kit2.jpg'
+import meal3 from '@/assets/img/kit3.jpeg'
+import meal4 from '@/assets/img/kit4.jpeg'
+import meal6 from '@/assets/img/kit6.jpg'
 // import meal4 from '@/assets/img/bananabread.jpg'
-import meal5 from '@/assets/img/bread2.jpg'
+// import meal5 from '@/assets/img/bread2.jpg'
 const selectedProduct = ref({}) as any
 const showPreview = ref(false)
 const images = ref([
@@ -144,7 +145,7 @@ const images = ref([
         message: `Blown away by how polished this icon pack is. Everything looks so consistent and each SVG is optimized out of the box so I can use it directly with confidence. It would take me several hours to create a single icon this good, so it's a steal at this price.`,
         rating: 4,
         date: 'July 12, 2021',
-        avatar: meal1
+        avatar: meal2
       }
     ],
     sizeList: ['S', 'MD', 'L', 'XL', 'XXL'],
@@ -164,7 +165,7 @@ const images = ref([
         message: `Blown away by how polished this icon pack is. Everything looks so consistent and each SVG is optimized out of the box so I can use it directly with confidence. It would take me several hours to create a single icon this good, so it's a steal at this price.`,
         rating: 4,
         date: 'July 12, 2021',
-        avatar: meal1
+        avatar: meal3
       }
     ],
     sizeList: ['S', 'MD', 'L', 'XL', 'XXL'],
@@ -174,7 +175,7 @@ const images = ref([
     vendor: 'Chijoke'
   },
   {
-    imgUrl: meal5,
+    imgUrl: meal4,
     name: 'Almond Banana Bread',
     description: 'This easy banana bread recipe creates a perfect snack or dessert if you love the taste of ripe bananas & the “crunch” of delicious almonds.',
     rating: 5,
@@ -184,7 +185,7 @@ const images = ref([
         message: `Blown away by how polished this icon pack is. Everything looks so consistent and each SVG is optimized out of the box so I can use it directly with confidence. It would take me several hours to create a single icon this good, so it's a steal at this price.`,
         rating: 4,
         date: 'July 12, 2021',
-        avatar: meal1
+        avatar: meal4
       }
     ],
     sizeList: ['S', 'MD', 'L', 'XL', 'XXL'],

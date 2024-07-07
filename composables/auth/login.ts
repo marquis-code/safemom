@@ -6,6 +6,7 @@ const runtimeData = {
   user: ref({} as any),
   token: ref(""),
 };
+const router = useRouter()
 const localstorageDate = {
   user: useStorage("user", {} as any),
   token: useStorage("token", ""),
@@ -46,14 +47,14 @@ export const useLogin = () => {
         autoClose: 5000,
         dangerouslyHTMLString: true,
       });
-      useRouter().push({ path: "/assessment" });
+      useRouter().push({ path: "/dashboard/vendor" });
       return response.data;
     } catch (error) {
       useNuxtApp().$toast.error("Something went wrong!", {
         autoClose: 5000,
         dangerouslyHTMLString: true,
       });
-      useRouter().push({ path: "/assessment" });
+      useRouter().push({ path: "/dashboard/vendor" });
       return error;
     } finally {
       loading.value = false;
@@ -73,9 +74,11 @@ export const useLogin = () => {
       if (result.value) {
         localStorage.clear();
         runtimeData.user.value = null;
+        router.push({ path: "/auth" });
         // location.href = "/login";
       } else {
         Swal.fire("Cancelled", "Action was cancelled", "info");
+        router.push({ path: "/auth" });
       }
     });
   };

@@ -11,6 +11,12 @@ export default {
         { name: "format-detection", content: "telephone=no" },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
+      script: [
+        {
+          src: "https://checkout.flutterwave.com/v3.js",
+          defer: true
+        }
+      ]
     },
   },
   modules: ["@nuxtjs/tailwindcss"],

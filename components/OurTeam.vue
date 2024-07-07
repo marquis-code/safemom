@@ -29,8 +29,8 @@ const { t } = useI18n()
 import ceo from '@/assets/img/ceo.jpeg'
 import cto from '@/assets/img/cto.jpeg'
 import qa from '@/assets/img/qa.jpeg'
-import cmo from '@/assets/img/cmo.jpeg'
-import coo from '@/assets/img/coo.jpeg'
+// import cmo from '@/assets/img/cmo.jpeg'
+// import coo from '@/assets/img/coo.jpeg'
 import ai from '@/assets/img/ai.jpeg'
 
 const members = ref([
@@ -49,16 +49,16 @@ const members = ref([
     name: 'Bukola Awowole',
     positionKey: 'bukolaAwowole'
   },
-  {
-    image: cmo,
-    name: 'Jesulewami Oreweme',
-    positionKey: 'jesulewamiOreweme'
-  },
-  {
-    image: coo,
-    name: 'Abdulkhaliq Abdulrasaq',
-    positionKey: 'abdulkhaliqAbdulrasaq'
-  },
+  // {
+  //   image: cmo,
+  //   name: 'Jesulewami Oreweme',
+  //   positionKey: 'jesulewamiOreweme'
+  // },
+  // {
+  //   image: coo,
+  //   name: 'Abdulkhaliq Abdulrasaq',
+  //   positionKey: 'abdulkhaliqAbdulrasaq'
+  // },
   {
     image: ai,
     name: 'Marquis Abah',
