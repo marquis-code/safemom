@@ -1,9 +1,6 @@
 import { useFlutterwave } from "flutterwave-vue3";
-// import { useLogin } from "@/composables/auth/login";
 import logo from "@/assets/img/logo2.png";
 export const useFlutterwaveSDK = () => {
-//   const { localstorageData } = useLogin();
-//   const user = localstorageData.user.value;
 const router = useRouter()
 const user = ref({
     firstname: 'Marquis',
