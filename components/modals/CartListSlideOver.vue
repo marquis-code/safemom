@@ -184,7 +184,6 @@ const processingPayment = ref(false);
 const selectedOption = ref<string>(paymentOptions[0].id);
 
 const submitPaymentOption = () => {
-    console.log(selectedOption.value, 'here')
     // handleCart({
     //     type: selectedOption.value
     // })

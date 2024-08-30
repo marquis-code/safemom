@@ -238,8 +238,7 @@
   
   onClickOutside(
       companyRef,
-      (event) => {
-          console.log(event)
+      (event: any) => {
           isCompanyModalOpen.value = false
       },
   )
@@ -249,7 +248,7 @@
   
   onClickOutside(
       productRef,
-      (event) => {
+      (event: any) => {
           isProductModalOpen.value = false
       },
   )

@@ -8,8 +8,6 @@ export const useCreateCart = () => {
     } else {
       cartList.value.push({ ...item, quantity: 1 });
     }
-
-    console.log(cartList.value, "card list");
   };
 
   const removeItem = (id: number) => {

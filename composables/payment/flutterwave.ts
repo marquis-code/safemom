@@ -24,7 +24,6 @@ const user = ref({
     useFlutterwave({
       amount: Number(product.price),
       callback(data: any): void {
-        console.log(data.flw_ref, 'here')
         if(data.status === 'successful'){
           location.href = `/${data.flw_ref}/order-summary`
         }
